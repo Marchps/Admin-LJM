@@ -20,7 +20,7 @@
 
                     <?php foreach ($boutiques_ljm as $btq): ?>
                         <tr class="gradeX">
-                            <td><input type="button" traget="_blank" value="Télécharger" onclick="window.location='http://......./<?= $download->real_name ?>';"></td>
+                            <td><input type="button" traget="_blank" value="Télécharger" onclick="window.location='http://......./"></td>
                             <td><?= $btq->nom ?></td>
                             <td><?= $btq->enseigne ?></td>
                             <td><?= $btq->ville ?></td>
