@@ -50,8 +50,6 @@ class BoutiquesController extends AppController{
     
         $this->render('boutiques_ljm.index', compact('boutiques_ljm','downloads','boutiques','count_btq','facilites','facilites_btq','user','messages','messages_non_lu'));
 
-
-
         }else{
             return $this->redirect(BASE_LINK);
         }
