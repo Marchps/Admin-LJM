@@ -19,7 +19,7 @@ Il comporte 3 types d'utilisateurs avec des niveaux de droits différents.
 ## Code Example MVC (boutiques)
 
 #####Model
-'''
+```
 <?php
 namespace App\Table;
 
@@ -44,11 +44,11 @@ class DownloadTable extends Table{
     }
 
 }
-'''
+```
 
 #####View 
 Fichier index 
-'''
+```
                 <h4 class="widgettitle">Liste des téléchargements</h4>
                 <table id="dyntable" class="table table-bordered">
                     <colgroup>
@@ -81,10 +81,10 @@ Fichier index
 
                     </tbody>
                 </table>
-'''
+```
 
 #####Controller
-'''
+```
 <?php
 
 namespace App\Controller;
@@ -114,7 +114,7 @@ class DownloadsController extends AppController {
 
 
 }
-'''
+```
 
 
 ## Motivation
@@ -125,10 +125,10 @@ La gestion des mails comprend de l'ajax, qui était une techno expérimentale po
 ## Installation et tests
 
 Après avoir copié les fichiers et installé la Base de données, il faut configurer les fichiers suivants :
-- à la racine Ad_Login_Exec.php L12 ''' 		    $dbh = new PDO('mysql:host='.$server.';dbname='.$base.'', ''.$user.'', ''.$pwd.'');
- '''
+- à la racine Ad_Login_Exec.php L12 ``` 		    $dbh = new PDO('mysql:host='.$server.';dbname='.$base.'', ''.$user.'', ''.$pwd.'');
+ ```
 - dans core/database/MysqlDatabase.php : 
-'''
+```
     public function __construct($db_name, $db_user = 'root', $db_pass='', $db_host = 'localhost'){
         $this->db_name = $db_name;
         $this->$db_user = $db_user;
@@ -144,7 +144,7 @@ Après avoir copié les fichiers et installé la Base de données, il faut confi
         }
         return $this->pdo;
     }
-'''
+```
 
 
 ## Contributors
