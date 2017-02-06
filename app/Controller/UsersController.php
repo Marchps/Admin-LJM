@@ -28,8 +28,8 @@ public function data(){
         $user = $this->User->get_user($id_user);
         $messages_non_lu = $this->Message->get_all_messages_non_lu($_SESSION['id_user']);
         $boutiques = $this->Boutique->all_btq_user($id_user);
-        $users = $this->User->get_all_user();
-        $this->render('users.index_ljm', compact('users','user','boutiques','messages_non_lu'));
+        $users_ljm = $this->User->get_all_user();
+        $this->render('users_ljm.index_ljm', compact('users_ljm','user','boutiques','messages_non_lu'));
     }
 
 public function update_user(){
