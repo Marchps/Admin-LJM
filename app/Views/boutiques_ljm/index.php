@@ -1,4 +1,4 @@
-                <h4 class="widgettitle">Liste des téléchargements</h4>
+                <h4 class="widgettitle">Liste des boutiques</h4>
                 <table id="dyntable" class="table table-bordered">
                     <colgroup>
                         <col class="con0" style="align: center; width: 4%" />
