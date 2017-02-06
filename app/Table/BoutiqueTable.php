@@ -43,7 +43,6 @@ class BoutiqueTable extends Table{
     public function get_all_boutiques(){
         return $this->query("
             SELECT * 
-            FROM jm_user_boutique ub,jm_boutique b,jm_boutique_to_facilites bf,jm_facilites fa
-            WHERE fa.id_facilites=bf.id_facilites AND ub.id_boutique=b.id_boutique AND bf.id_boutique=b.id_boutique ");
+            FROM jm_boutique");
     }
 }
