@@ -34,7 +34,7 @@ class BoutiquesController extends AppController{
     }
 
     public function index_ljm(){
-        if(isset($_SESSION['id_user']&&$_SESSION['id_droit']<3)){
+        if(isset($_SESSION['id_user'])&&$_SESSION['id_droit']<3){
 
             $id_user = $_SESSION['id_user'];
 
@@ -48,7 +48,7 @@ class BoutiquesController extends AppController{
             $downloads = $this->Download->last_5_download();
             $boutiques_ljm = $this->Boutique->get_all_boutiques();
     
-        $this->render('boutiques.index', compact('boutiques_ljm','downloads','boutiques','count_btq','facilites','facilites_btq','user','messages','messages_non_lu'));
+        $this->render('boutiques_ljm.index', compact('boutiques_ljm','downloads','boutiques','count_btq','facilites','facilites_btq','user','messages','messages_non_lu'));
 
 
 
