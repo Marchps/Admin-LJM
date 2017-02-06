@@ -9,11 +9,11 @@
                     </colgroup>
                     <thead>
                         <tr>
+                            <th class="head0">Action</th>
                             <th class="head0">Nom</th>
-                            <th class="head0">Enseigne</th>
-                            <th class="head1">Ville</th>
-                            <th class="head0">Etat</th>
-                            <th class="head1">ajouté par</th>
+                            <th class="head1">Enseigne</th>
+                            <th class="head0">Ville</th>
+                            <th class="head1">Etat</th>
                         </tr>
                     </thead>
                     <tbody>
