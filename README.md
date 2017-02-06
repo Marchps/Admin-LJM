@@ -125,7 +125,9 @@ La gestion des mails comprend de l'ajax, qui était une techno expérimentale po
 ## Installation et tests
 
 Après avoir copié les fichiers et installé la Base de données, il faut configurer les fichiers suivants :
-- à la racine Ad_Login_Exec.php L12 ``` 		    $dbh = new PDO('mysql:host='.$server.';dbname='.$base.'', ''.$user.'', ''.$pwd.'');
+- à la racine Ad_Login_Exec.php L12 
+``` 
+$dbh = new PDO('mysql:host='.$server.';dbname='.$base.'', ''.$user.'', ''.$pwd.'');
  ```
 - dans core/database/MysqlDatabase.php : 
 ```
