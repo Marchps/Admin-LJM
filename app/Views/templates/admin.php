@@ -211,10 +211,10 @@ jQuery(document).ready(function(){
                 <?php if($user->id_droit<3) { ?>
                 <li class="nav-header">Gestion LJM</li>
                 <li><a href="<?= BASE_LINK ?>/boutiques/index_ljm"><span class=" iconfa-pencil"></span> Gérer les boutiques </a></li>
-                <li><a href="<?= BASE_LINK ?>/promos/"><span class=" iconfa-flag"></span> Gérer les utilisateurs </a></li>
+                <li><a href="<?= BASE_LINK ?>/users/index_ljm"><span class=" iconfa-flag"></span> Gérer les utilisateurs </a></li>
                 <li><a href="<?= BASE_LINK ?>/boutiques/map"><span class=" iconfa-map-marker"></span> Gérer les droits </a></li>
                 <li><a href="<?= BASE_LINK ?>/medias/index"><span class=" iconfa-picture"></span> Gérer les images </a></li>
-                <li><a href="<?= BASE_LINK ?>/boutiques/map"><span class=" iconfa-map-marker"></span> Gérer les facilites </a></li>
+                <li><a href="<?= BASE_LINK ?>/facilites/index_ljm"><span class=" iconfa-map-marker"></span> Gérer les facilites </a></li>
                 <li><a href="<?= BASE_LINK ?>/boutiques/map"><span class=" iconfa-map-marker"></span> Gérer les infos bulles </a></li>
                 <?php } ?>
             </ul>
