@@ -6,7 +6,7 @@ class UserTable extends Table{
 
     protected $table = 'users';
 
-    public function getUsers(){
+    public function get_all_user(){
         return $this->query("
         	SELECT * FROM jm_user");
     }

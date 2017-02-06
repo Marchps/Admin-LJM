@@ -23,6 +23,15 @@ public function data(){
         $this->render('users.data', compact('user','boutiques','messages_non_lu'));
     }
 
+    public function index_ljm(){
+        $id_user = $_SESSION['id_user'];
+        $user = $this->User->get_user($id_user);
+        $messages_non_lu = $this->Message->get_all_messages_non_lu($_SESSION['id_user']);
+        $boutiques = $this->Boutique->all_btq_user($id_user);
+        $users = $this->User->get_all_user();
+        $this->render('users.index_ljm', compact('users','user','boutiques','messages_non_lu'));
+    }
+
 public function update_user(){
         $id_user = $_SESSION['id_user'];
 
